@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=devide-width, initial-scale=1">
+
+	<title>Municipalidad Distrital Lagunas</title>
+	<link rel="shortcut icon" type="image/png" href="foic/logoLagunas.png">
+
+	<script src="https://kit.fontawesome.com/8041c8f965.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+
+	<link rel="stylesheet" type="text/css" href="css/estiloCarLug.css">
+	<script defer src="js/funcionCarLug.js"></script>
+	<script defer src="js/cargarlugares.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div id="primero">
+			<h2><em>"Año de la unidad, la Paz y el Desarrollo"</em><a href="https://www.gob.pe/munilagunas-chiclayo"><img src="img/Transp.png" align="right" width="120" height="40"></a></h2>
+		</div>
+		
+
+		<div id="segundo">
+			<nav class="navbar">
+			<a href="Municipalidad.html"><img src="foic/logoLagunas2-1.png" align="left" width="10%" height="10%"></a>
+			<br/>
+			<aside id="log" style="float: right">				
+					<a href="login.html"><i class="fa-solid fa-user fa-fade fa-xl" style="color: #00ac96;"></i></a>
+			</aside>
+
+			<ul style="float: right;">
+				<li><a id="men" href="Municipalidad.html"> Inicio </a></li>
+				<li><a id="men" href="MiLagunas.html"> Mi Lagunas </a></li>
+				<li><a id="men" href="Noticias.html"> Noticias </a></li>
+				<li><a id="men" href="Documentacion.html"> Documentación </a></li>
+				<li><a id="men" href="Gestion.html"> Gestión </a></li>
+				
+				<li class="dezplegado"><a id="men"><span> Contacta con Nosotros </span></a>
+					<ul>
+						<li><a id="men" href="Denuncias.html"> Denuncias </a></li>
+						<li><a id="men" href="Tramites.html"> Tramites </a></li>	
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+		<br/><br/>
+		</div>
+		<br/>
+		<section id="banner" >
+			<img src="foic/Fondo-section5.png">            
+			<p>Mi Lagunas</p>
+		</section>
+		
+	</header>
+
+
+	<section id="principal">			
+			<article id="descripcion">
+				<p>El distrito de Lagunas es uno de los veinte distritos de la provincia de Chiclayo, ubicada en el departamento de Lambayeque, bajo la administración del Gobierno Regional de Lambayeque, en el norte de Perú</p>
+				<p>Fue creado por ley el 2 de enero de 1857, en el gobierno del Presidente Ramón Castilla</p>
+				<p>Abarca una superficie de 429,27 km² y está bañado por las aguas del Océano Pacífico y atravesado por el río Saña. Su capital es el pueblo de Mocupe ubicado a 39 km de Chiclayo, a 33 m s. n. m.</p>
+			</article>
+<br/>           	            	                  
+	</section>
+
+	<section id="Carga-Turistico" style="color: black;">
+		<center><h3>Lugares Turísticos</h3></center>
+
+		<nav class="nav-tabs">
+		  <ul class="nav-list">
+			<li class="nav-item active" onclick="changeTab(1)">Nuestra Lagunas</li>
+		  </ul>
+		</nav>
+	  
+		<div id="content-container">
+	  
+			<div id="content-1" class="content active">        
+			  <div class="carousel">
+				<div class="carousel-inner" id="lugaresContainer">					
+					
+					<!--Contenido Cargado-->	
+				  
+				</div>
+				<button class="prev-button" onclick="prevSlide()">&#8249;</button>
+				<button class="next-button" onclick="nextSlide()">&#8250;</button>
+			  </div>
+			</div>
+	  
+	  
+	  </div>	  
+	  
+	  </section>
+
+
+
+	<footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4><i class="fa-solid fa-phone" style="color: #005eff;"></i> Teléfono</h4>
+                    <p>074 614-315</p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-regular fa-envelope" style="color: #005eff;"></i> Email</h4>
+                    <p><a href="mailto:municipalidaddelagunasmocupe@gmail.com"> municipalidaddelagunasmocupe@gmail.com</a></p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-brands fa-facebook" style="color: #005eff;"></i> Facebook</h4>
+                    <p><a href="https://www.facebook.com/MunideLagunas" target="_blank"> Municipalidad Distrital de Lagunas</a></p>
+                </div>
+            </div>
+            <h2 class="titulo-final">Copyright &copy; 2023 Equipo de desarrollo UTP</h2>
+    </footer>
+
+
+</body>
+</html>

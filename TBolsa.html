@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Consultas</title>  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/estiloconsulta.css">
+
+</head>
+
+
+<body>
+
+  <div class="main-container"> 
+    <p class="title"></span>BOLSA LABORAL</p>
+
+    <div class="panel">
+      <div><div class="panel-heading"><span class="glyphicon glyphicon-user"></span> Datos de la persona</div>
+          <div class="panel-body">
+            <div class="row">
+              
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <select name="ddlTipoDocumento" id="ddlTipoDocumento" class="form-input">
+                    <option>Tipo Documento</option>
+                    <option selected="selected">DNI</option>
+                    <option>RUC</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <input name="txtNumeroDocumento" type="text" id="txtNumeroDocumento" class="form-input" placeholder="N° de Documento" autocomplete="off">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <input name="txtNombre" type="text" id="txtNombre" class="form-input" placeholder="Nombre(s)" autocomplete="off" maxlength="100">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <input name="txtApePat" type="text" id="txtApePat" class="form-input" placeholder="Apellido Paterno" autocomplete="off" maxlength="50">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <input name="txtApeMat" type="text" id="txtApeMat" class="form-input" placeholder="Apellido Materno" autocomplete="off" maxlength="50">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <input name="txtDomicilio" type="text" id="txtDomicilio" class="form-input" placeholder="Domicilio" maxlength="150">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input name="txtCelular" type="text" maxlength="9" id="txtCelular" class="form-input" placeholder="Teléfono o Celular" autocomplete="off">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input name="txtEmail" type="text" maxlength="50" id="txtEmail" class="form-input" placeholder="E-mail@gmail.com" autocomplete="off">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="submit-button">
+      <button type="submit"><span class="glyphicon glyphicon-arrow-right"></span> Enviar</button>
+    </div>
+  </div>
+</body>
+</html>

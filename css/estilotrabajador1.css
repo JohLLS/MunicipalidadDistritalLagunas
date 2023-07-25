@@ -1,0 +1,99 @@
+#trabajadores {
+  background: #212121 url(../foic/Fondo-section4.png);
+  text-align: center;
+  position: relative;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 1 10px;
+  padding: 5px;
+  background-color: #DF4727;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #4CF669;
+}
+
+.content {
+  display: none;
+}
+
+#content-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #06649B;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content.active {
+  display: block;
+}
+
+.worker-container {
+  position: relative;
+  z-index: 1;
+}
+
+.worker {
+  display: inline-block;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.worker:hover {
+  background-color: #CCC;
+  transform: scale(1.05);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}

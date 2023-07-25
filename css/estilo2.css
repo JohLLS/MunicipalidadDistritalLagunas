@@ -1,0 +1,75 @@
+/*Controlar la superposición de los elementos*/
+/*---------------------------------------------------------------------------------*/
+header .navbar{
+  position: relative;
+  z-index: 2;
+}
+header section#banner {
+  position: relative;
+  z-index: 1;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Cuerpo-General*/
+/*---------------------------------------------------------------------------------*/
+body{
+	background: #212121 url(../img/fondo.jpg);
+	color: #FFF;
+	font-family: "Chalet", helvetica, verdana;
+}
+section{
+	background: #212121 url(../foic/Fondo-section3.png);
+	text-align: center;
+	padding: 10px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Header-Banner*/
+/*---------------------------------------------------------------------------------*/
+section#banner {
+	position: relative;
+	width: 100%;
+  	height: 550px;
+  	overflow: hidden;
+  	padding: 1;
+}
+
+section#banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section#banner p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 100px;
+  background-color: #6BACFF;
+  color: white;
+  font-size: 18px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Cuerpo-articulos*/
+/*---------------------------------------------------------------------------------*/
+article#descripcion {
+	background: #212121 url(../foic/Fondo-section2.png);
+	background-size: cover;
+	width: 100%;
+  	max-height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	align-items: center;
+  	justify-content: center;
+  	box-sizing: border-box;
+  	text-align: center;
+  	font-size: 15px;
+  	line-height: 1.5;
+  	overflow: auto;
+  	padding: 10px;
+}
+/*---------------------------------------------------------------------------------*/

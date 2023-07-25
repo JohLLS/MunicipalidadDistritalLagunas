@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Municipalidad Distrital Lagunas</title>
+    <link rel="shortcut icon" type="image/png" href="foic/logoLagunas.png">
+
+	<script src="https://kit.fontawesome.com/8041c8f965.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+	<link rel="stylesheet" type="text/css" href="css/estiloconsulta1.css">
+
+</head>
+<body>
+	<header>
+		<div id="primero">
+			<h2><em>"Año de la unidad, la Paz y el Desarrollo"</em><a href="https://www.gob.pe/munilagunas-chiclayo"><img src="img/Transp.png" align="right" width="120" height="40"></a></h2>
+		</div>
+		
+
+		<div id="segundo">
+			<nav class="navbar">
+			<a href="Municipalidad.html"><img src="foic/logoLagunas2-1.png" align="left" width="10%" height="10%"></a>
+			<br/>
+			<aside id="log" style="float: right">				
+					<a href="login.html"><i class="fa-solid fa-user fa-fade fa-xl" style="color: #00ac96;"></i></a>
+			</aside>
+
+			<ul style="float: right;">
+				<li><a id="men" href="Municipalidad.html"> Inicio </a></li>
+				<li><a id="men" href="MiLagunas.html"> Mi Lagunas </a></li>
+				<li><a id="men" href="Noticias.html"> Noticias </a></li>
+				<li><a id="men" href="Documentacion.html"> Documentación </a></li>
+				<li><a id="men" href="Gestion.html"> Gestión </a></li>
+				
+				<li class="dezplegado"><a id="men"><span> Contacta con Nosotros </span></a>
+					<ul>
+						<li><a id="men" href="Denuncias.html"> Denuncias </a></li>
+						<li><a id="men" href="Tramites.html"> Tramites </a></li>	
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+		<br/><br/>
+		</div>
+	</header>
+<div class="presentacion" style="color: white;">
+	<br>
+	<center>
+		<span>MUNICIPALIDAD DISTRITAL DE LAGUNAS</span> |
+		<span>Departamento de Lambayeque, Provincia de Chiclayo</span>
+		<p>Escríbenos aquí tus quejas / reclamos para poder resolverlas.</p>
+	</center>
+</div>
+
+<div class="formularoDenuncia">		
+	<div class="main-container"> 
+		<p class="title"></span>DENUNCIAS</p>
+	
+		<div class="panel">
+		  <div><div class="panel-heading"><center></span> Datos de la persona</center></div>
+			  <div class="panel-body">
+				<div class="row">
+				  
+				  <div class="col-sm-4">
+					<div class="form-group">
+					  <select name="ddlTipoDocumento" id="ddlTipoDocumento" class="form-input">
+						<option>Tipo Documento</option>
+						<option selected="selected">DNI</option>
+						<option>RUC</option>
+						</select>
+					</div>
+				  </div>
+	
+				  <div class="col-sm-8">
+					<div class="form-group">
+					  <input name="txtNumeroDocumento" type="text" id="txtNumeroDocumento" class="form-input" placeholder="N° de Documento" autocomplete="off">
+					</div>
+				  </div>
+				</div>
+	
+				<div class="row">
+				  <div class="col-sm-4">
+					<div class="form-group">
+					  <input name="txtNombre" type="text" id="txtNombre" class="form-input" placeholder="Nombre(s)" autocomplete="off" maxlength="100">
+					</div>
+				  </div>
+				  <div class="col-sm-4">
+					<div class="form-group">
+					  <input name="txtApePat" type="text" id="txtApePat" class="form-input" placeholder="Apellido Paterno" autocomplete="off" maxlength="50">
+					</div>
+				  </div>
+				  <div class="col-sm-4">
+					<div class="form-group">
+					  <input name="txtApeMat" type="text" id="txtApeMat" class="form-input" placeholder="Apellido Materno" autocomplete="off" maxlength="50">
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-sm-12">
+					<div class="form-group">
+					  <input name="txtDomicilio" type="text" id="txtDomicilio" class="form-input" placeholder="Domicilio" maxlength="150">
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-sm-6">
+					<div class="form-group">
+					  <input name="txtCelular" type="text" maxlength="9" id="txtCelular" class="form-input" placeholder="Teléfono o Celular" autocomplete="off">
+					</div>
+				  </div>
+				  <div class="col-sm-6">
+					<div class="form-group">
+					  <input name="txtEmail" type="text" maxlength="50" id="txtEmail" class="form-input" placeholder="E-mail@gmail.com" autocomplete="off">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	
+		<div class="panel">
+		  <div><div class="panel-heading"><center></span> Detalle del Mensaje</center></div>
+			  <div class="panel-body">
+				<div class="row">
+				  <div class="col-sm-6">
+					<div class="form-group">
+					  <input name="txtAsunto" type="text" id="txtAsunto" class="form-input input-sm" placeholder="Asunto" autocomplete="off" maxlength="150">
+					</div>
+				  </div>
+				  
+				</div>
+				<div class="row">
+				  <div class="col-sm-12">
+					<div class="form-group">
+					  <center>Mensaje:</center>
+					  <textarea name="txtMensaje" rows="5" cols="20" id="txtMensaje" class="form-input input-sm" style="height:175px;"></textarea>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<div class="submit-button">
+		  <button type="submit"><span class="glyphicon glyphicon-arrow-right"></span> Enviar</button>
+		</div>
+	  </div>
+</div>
+
+
+	<footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4><i class="fa-solid fa-phone" style="color: #005eff;"></i> Teléfono</h4>
+                    <p>074 614-315</p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-regular fa-envelope" style="color: #005eff;"></i> Email</h4>
+                    <p><a href="mailto:municipalidaddelagunasmocupe@gmail.com"> municipalidaddelagunasmocupe@gmail.com</a></p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa-brands fa-facebook" style="color: #005eff;"></i> Facebook</h4>
+                    <p><a href="https://www.facebook.com/MunideLagunas" target="_blank"> Municipalidad Distrital de Lagunas</a></p>
+                </div>
+            </div>
+            <h2 class="titulo-final">Copyright &copy; 2023 Equipo de desarrollo UTP</h2>
+    </footer>
+</body>
+</html>

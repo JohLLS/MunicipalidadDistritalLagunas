@@ -1,0 +1,123 @@
+/*Controlar la superposición de los elementos*/
+/*---------------------------------------------------------------------------------*/
+header .navbar{
+  position: relative;
+  z-index: 2;
+}
+header section#banner {
+  position: relative;
+  z-index: 1;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Cuerpo-General*/
+/*---------------------------------------------------------------------------------*/
+body{
+	background: #212121 url(../img/fondo.jpg);
+	color: #FFF;
+	font-family: "Chalet", helvetica, verdana;
+}
+section{
+	background: #212121 url(../foic/Fondo-section3.png);
+	text-align: center;
+	padding: 10px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Header-Banner*/
+/*---------------------------------------------------------------------------------*/
+section#banner {
+	position: relative;
+	width: 100%;
+  	height: 550px;
+  	overflow: hidden;
+  	padding: 1;
+}
+section#banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#banner p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 100px;
+  background-color: #6BACFF;
+  color: white;
+  font-size: 18px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*Cuerpo-articulos / secciones / divisiones*/
+/*---------------------------------------------------------------------------------*/
+#principal {
+  text-align: center;
+  position: relative;
+}
+#mi-iframe {
+  border: 0;
+  margin: 0;
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+  background-color: #333333;
+  width: 150px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #555555;
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  background-color: #999999;
+}
+
+.content {
+  flex: 1;
+  display: none;
+  align-content: center;
+}
+
+#content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content.active {
+  display: block;
+}
+
+.carga-container {
+  position: relative;
+  z-index: 1;
+  align-content: center;
+}
+
+.carga {
+  display: inline-block;
+  background-color: #033c86;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------------------*/

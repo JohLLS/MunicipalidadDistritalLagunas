@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    background-color: #333; /* Color de fondo para la tabla */
+    color: white; /* Color del texto en la tabla */
+    border-collapse: collapse; /* Colapsar bordes de celda */
+    width: 100%;
+    max-width: 600px;
+}
+
+table, th, td {
+    border: 1px solid white; /* Bordes de la tabla y celdas */
+    padding: 8px;
+}
+
+th {
+    background-color: #555; /* Color de fondo para las celdas del encabezado */
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Color del texto en enlaces */
+}
+
+a:hover {
+    color: red; /* Color del texto en enlaces en estado hover */
+}
+
+button {
+    background-color: #00BFFF; /* Color celeste */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF0000; /* Color rojo en estado hover */
+}
